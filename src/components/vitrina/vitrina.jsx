@@ -17,74 +17,53 @@ let slize
 
 
 function Vitrina(rix) {
-
-    
     const [tor , setTor] = useState("dveri");
-    
     const [render , setRender] = useState(false)
-    const prevCont = useRef()
-    if (window.innerWidth <= 390){
-        console.log(222)
-         if (tor == String('dveri')){
-
-                slize = vitrina_all_dors.slice(0,4)
-                
-            }
+    const ery = Math.max(document.documentElement.clientWidth)
+   
+   if(ery <= 390){
+        if (tor == String('dveri')){
+            slize = vitrina_all_dors.slice(0,4)
             if (render == true){
-                    slize = vitrina_all_dors
-                    
-                } 
-                if (tor == String('mebel')){
+                slize = vitrina_all_dors
+            } 
                 
-                slize = vitrina_all_mebel.slice(0,4)
-                }
-                if (render== true){
-                    slize = vitrina_all_mebel  
-                } 
-    
-           
-        
-
-    }
-     if (window.innerWidth > 390){
+        }
         if (tor == String('mebel')){
+            slize = vitrina_all_mebel.slice(0,4)
+            if (render== true){
+                slize = vitrina_all_mebel  
+            } 
+        }
+    }else{
+        if (tor == String('mebel')){
+            slize = vitrina_all_mebel.slice(0,9)
+            if (render == true){
+                slize = vitrina_all_mebel  
+            } 
+        }
+            if (tor == String('dveri')){
+                slize = vitrina_all_dors.slice(0,9)
+                if (render == true){
+                    slize = vitrina_all_dors   
+                }  
+            }
         
-        slize = vitrina_all_mebel.slice(0,9)
-        if (render== true){
-            slize = vitrina_all_mebel  
-        } 
-    }
-    if (tor == String('dveri')){
-
-        slize = vitrina_all_dors.slice(0,9)
-         if (render == true){
-            slize = vitrina_all_dors
-            
-        }  
-    }
-    }
-
+   }
    
-     
-
-    
-    
-    
     function net(){
-            setRender(!render)
-            
-            
+            setRender(true)
+               
     }
-   
-    
-    
-    
-    
-   
-
-
-    
+  
+  // Состояние: текущая выбранная категория
+  
  
+   const handleCategoryClick1 = (vit) => {
+    setTor(vit.path);
+    setRender(false);
+     // Сбрасываем показ всех элементов при смене категории
+  };
   return (
     <section >
         <div className='container vitrina'>
@@ -93,7 +72,7 @@ function Vitrina(rix) {
             </h1>
             <div className='vitrina_menu'>
                 {vitriva_menu = vitrina_nemu.map(vit =>
-                    <a  className={tor === vit.path ? "active" : ""} onClick={() => setTor(vit.path) } >{vit.type}</a>
+                    <a  className={tor === vit.path ? "active" : ""} onClick={() => handleCategoryClick1(vit)  } >{vit.type}</a>
                 )}
             </div>
             <div className='vitrina_items'>
@@ -107,9 +86,10 @@ function Vitrina(rix) {
                     color = {vitr.color}                  />
                 )}
             </div>
-            <div className='button button_down' onClick={net }>
+           {!render && (<div className='button button_down' onClick={net }>
                     Показать все
             </div>
+        )}
         </div>
     </section>
   );

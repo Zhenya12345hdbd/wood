@@ -4,7 +4,7 @@ import All_button from '../header/all_button';
 
 
 function Help(rix) {
-    console.log(window.innerWidth)
+    
    
  
   return (
