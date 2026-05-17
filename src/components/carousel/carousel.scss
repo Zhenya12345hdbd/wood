@@ -1,0 +1,143 @@
+@import '../../variables.scss';
+
+
+.carousel{
+   
+   background-image: url("../carousel/carousel_image/carousel.jpg");
+   
+   max-width: 1560px;
+   background-size: 100%;
+   margin-top: 20px;
+   height: 700px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+.Carousel_text{
+        display: flex;
+        flex-direction: row;
+        width: 404px;
+        height: 440px;
+        overflow: hidden;
+        
+
+    }
+.all{
+    width: 440px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    margin-left: 50px;
+    
+    h2{
+        color:white;
+        margin-top:120px;
+    }
+    h4{
+        color:$color-yellow;
+        margin-bottom: 15px;
+    }
+    p{
+        text-align: center;
+        width: 354px;
+        margin-bottom: 34px;
+        color: white;
+    }
+    
+}
+.Carousel_text::after{
+    content: '';
+    width: 440px;
+    height: 440px;
+    background-image: url('./carousel_image/fon.png');
+    background-size: 100%;
+    background-color: #C69C6D0D;
+    border-radius: 50%;
+  position: absolute;
+    opacity: 50%;
+   
+}
+.carousel_num{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    align-items: right;
+    gap: 45px;
+    position: absolute;
+    justify-content:flex-end;
+    bottom: 300px;
+    z-index: 4;
+    width: 300px;
+    bottom: 170px;
+    
+    h4{
+        margin-right: 5px;
+        color: white;
+    }
+    
+}
+.carousel_button{
+    display: flex;
+    flex-direction: row;
+    
+    .arrow{
+        width: 20px;
+        display: flex;
+        height: 20px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        
+
+    }
+}
+
+@media (max-width: 390px) {
+    .carousel{
+    padding-left: 20px;
+    height: 470px;
+    width: 370px;
+   
+}
+.Carousel_text{
+    width: 330px;
+    margin-top: 70px;
+    left: 25px;
+    
+    
+    h2{
+        margin-top: 70px;
+        font-size: 29px;
+    }
+    p{
+        font-size: 13px;
+        width: 290px;
+    }
+
+}
+.Carousel_text::after{
+    
+    width: 330px;
+    height: 330px;
+    background-image: url('./carousel_image/fon.png');
+
+}
+.all{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 330px;
+}
+
+    .carousel_num{
+        bottom: 100px;
+        
+    }
+
+}

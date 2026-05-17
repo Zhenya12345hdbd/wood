@@ -1,0 +1,137 @@
+@import "./variables.scss";
+header{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: $color-dark-brown;
+    font-family: 'PermianSerifTypeface-Bold';
+     color: white;
+     padding-bottom: 30px;
+     padding-top: 30px;
+     
+     
+}
+section{
+    max-width: 1600px;
+    margin: auto;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+}
+
+// это шрифты
+
+.desctop_h1{
+font-weight: 400;
+font-size: 64px;
+line-height: 100%;
+
+}
+.desctop_h2{
+font-weight: 700;
+font-size: 50px;
+line-height: 100%;
+}
+.desctop_h3{
+font-weight: 700;
+font-size: 36px;
+line-height: 100%;
+}
+.desctop_h4{
+font-weight: 700;
+font-size: 25px;
+line-height: 100%;
+}
+.desctop_h5{
+font-weight: 700;
+font-size: 20px;
+line-height: 100%;
+}
+.desctop_h6{
+    font-family: 'Gilroy-Regular';
+font-weight: 400;
+font-size: 22px;
+line-height: 100%;
+}
+.body_l{
+
+        font-family: 'Gilroy-Regular';
+font-weight: 400;
+font-size: 18px;
+line-height: 100%;
+}
+.body_l_bold{
+
+        font-family: 'Gilroy-Regular';
+font-weight: 700;
+font-size: 18px;
+line-height: 100%;
+}
+.body_m{
+ font-family: 'Gilroy-Regular';
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+letter-spacing: 0%;
+}
+.body_m_bold{
+ font-family: 'Gilroy-Regular';
+font-weight: 700;
+font-size: 16px;
+line-height: 130%;
+letter-spacing: 0%;
+}
+.body_s{
+ font-family: 'Gilroy-Regular';
+
+font-weight: 400;
+font-size: 13px;
+line-height: 130%;
+letter-spacing: 0%;
+}
+
+.body_xs{
+ font-family: 'Gilroy-Regular';
+font-weight: 400;
+font-size: 12px;
+line-height: 140%;
+letter-spacing: 0%;
+}
+.body_xs_bold{
+ font-family: 'Gilroy-Regular';
+font-weight: 700;
+font-size: 12px;
+line-height: 140%;
+letter-spacing: 0%;
+}
+.button-font{
+ font-family: 'Gilroy-Regular';
+color: white;
+font-weight: 500;
+font-style: Bold;
+font-size: 15px;
+line-height: 140%;
+letter-spacing: 6%;
+vertical-align: middle;
+text-transform: uppercase;
+
+}
+
+
+@media (max-width: 390px) {
+  header {
+    width: 390px;
+  }
+  .container{
+    width: 390px;
+    justify-content:left;
+    gap: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+

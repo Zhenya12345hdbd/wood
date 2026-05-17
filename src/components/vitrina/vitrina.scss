@@ -1,0 +1,200 @@
+
+.vitrina{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    h1{
+        align-self: flex-start;
+    }
+}
+.vitrina_menu{
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 52px;
+    a{ 
+        font-family: 'Gilroy-Regular';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 120%;
+        letter-spacing: 6%;
+        text-align: center;
+        vertical-align: middle;
+        color: #DADADA;
+        padding: 20px 48px;
+        border: 1px solid #DADADA;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .active{
+    border: 1px solid #3B3937;
+         color: #3B3937;
+}
+    a:hover{
+         border: 1px solid #3B3937;
+         color: #3B3937;
+    }
+
+
+}
+.vitrina_items{
+    min-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 40px;
+    
+}
+.controls {
+            text-align: center; /* Размещаем точки по центру */
+            margin-top: 10px; /* Добавляем отступ сверху */
+            display: flex; /* Размещаем точки в строку */
+            flex-direction: row;
+            width: 90px;
+}
+ .btn {
+            
+            width: 8px; /* Размер точки */
+            height: 8px;
+            background: gray; /* Серый цвет точки */
+            border-radius: 50%; /* Делаем точки круглыми */
+            margin: 5px; /* Добавляем небольшой отступ между ними */
+            cursor: pointer; /* Делаем курсор в виде руки при наведении */
+           
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+.item{
+    min-width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #DADADA;
+    img{
+        width: 240px;
+        height: 240px;
+        object-fit: contain;
+        align-self: center;
+        margin-top: 30px;
+        
+    }
+    h3{
+        
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 1%;
+        color: #3B3937;
+        margin-bottom: 10px;
+
+    }
+    a{
+        display: block;
+        align-self:flex-end;
+        font-size: 19px;
+        color: #B14101;
+        margin-top: 24px;
+        cursor: pointer;
+
+    }
+    a:hover{
+        border-bottom: 1px solid #B14101;
+    }
+    
+}
+.button_down{     
+font-weight: 700;
+font-size: 15px;
+line-height: 140%;
+letter-spacing: 6%;
+text-transform: uppercase;
+        cursor: pointer;
+        min-width: 1280px;
+        text-align: center;
+        height: 60px;
+        margin-top: 30px;
+        padding-top: 20px;
+    }
+
+@media (max-width: 390px) {
+    .vitrina{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+
+    h1{
+        font-size: 40px;
+    }
+}
+
+    .vitrina_menu{
+    justify-content: start;
+    margin-top: 20px;
+    width: 390px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    
+
+    a{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;        
+        color: #DADADA;
+        padding: 10px 20px;
+        border: 1px solid #DADADA;
+        text-transform: uppercase;
+
+         scroll-snap-align:start ;
+         white-space: pre;
+         
+         
+    }
+   
+    a:hover{
+         border: 1px solid #3B3937;
+         color: #3B3937;
+    }
+}
+    .vitrina_menu::-webkit-scrollbar {
+  width: 0;
+}
+    
+.vitrina_items{
+    min-width: 390px;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.item{
+    min-width: 370px;
+}
+.button_down{     
+
+font-weight: 700;
+font-size: 15px;
+line-height: 140%;
+letter-spacing: 6%;
+text-transform: uppercase;
+ cursor: pointer;
+min-width: none;
+width: 390px;
+height: 60px;
+margin-top: 0px;
+padding-top: 0px;
+
+    }
+
+
+}
