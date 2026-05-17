@@ -4,7 +4,8 @@ import Vitrina from "../components/vitrina/vitrina";
 import { useParams } from "react-router-dom";
 import { vitrina_all_dors } from "../components/vitrina/vitrina_all_items_data";
 import Help from "../components/help/help";
-let user
+import New_statia from "../components/new_statia/new_statia";
+
 
 function Main() {
   
@@ -18,6 +19,7 @@ function Main() {
         <Main_zakaz/>
         <Vitrina />
         <Help/>
+        <New_statia/>
 
     </div>
     

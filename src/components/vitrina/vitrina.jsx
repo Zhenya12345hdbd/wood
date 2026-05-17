@@ -22,6 +22,7 @@ function Vitrina(rix) {
     const ery = Math.max(document.documentElement.clientWidth)
    
    if(ery <= 390){
+    console.log(390)
         if (tor == String('dveri')){
             slize = vitrina_all_dors.slice(0,4)
             if (render == true){
@@ -85,11 +86,12 @@ function Vitrina(rix) {
                     sale = {vitr.sale}  
                     color = {vitr.color}                  />
                 )}
-            </div>
-           {!render && (<div className='button button_down' onClick={net }>
+                {!render && (<div className='button button_down' onClick={net }>
                     Показать все
             </div>
         )}
+            </div>
+           
         </div>
     </section>
   );
