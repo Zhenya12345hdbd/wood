@@ -32,10 +32,14 @@
 .new_item{
     width: 400px;
     height: 450px;
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
     img{
         width: 400px;
         height: 180px;
+        object-fit: cover;
     }
 }
 .main{
@@ -46,7 +50,7 @@
 }
 .item_text{
     padding: 30px;
-    height: 350px;
+    
     h3{
         color: black;
         margin-bottom: 15px;
