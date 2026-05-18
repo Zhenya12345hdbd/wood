@@ -1,8 +1,10 @@
 import All_button from '../header/all_button';
 import './new_statia.scss'
 import first from '../new_statia/statia_image/1.png'
+import { staia_items_data } from './new_statia_data';
+import New_statia_item from './new_statia_item';
 
-
+let statia
 
 function New_statia(rix) {
  
@@ -16,83 +18,19 @@ function New_statia(rix) {
                 <a>Все статьи</a>
             </div>
             <div className='container main'>
-                <div className='new_item'>
-                    <img src={first}/>
-                        <div className='item_text'>
-                            <h3 className='desctop_h5'>
-                            Графичный дизайн и бескомпромиссное качество в коллекции перегородок Grafica
-                        </h3>
-                        <p className='body_xs'>
-                            В этой коллекции мы создали многообразие дизайна створок и оснастили межкомнатные перегородки безупречным качеством механизмов. Особенность коллекции — плавность скольжения, комфорт и дизайн.
-                        </p>
-                        <div className='new_low'>
-                            <a className='body_xs_bold'>Читать далее</a>
-                            <h4 className='body_xs'>
-                                15 октября 2022
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div className='new_item'>
-                    <img src={first}/>
-                    <h3 className='desctop_h5'>
-                        Графичный дизайн и бескомпромиссное качество в коллекции перегородок Grafica
-                    </h3>
-                    <p className='body_xs'>
-                        В этой коллекции мы создали многообразие дизайна створок и оснастили межкомнатные перегородки безупречным качеством механизмов. Особенность коллекции — плавность скольжения, комфорт и дизайн.
-                    </p>
-                    <div className='new_low'>
-                        <a className='body_xs_bold'>Читать далее</a>
-                    </div>
-                </div>
-                <div className='new_item'>
-                    <img src={first}/>
-                    <h3 className='desctop_h5'>
-                        Графичный дизайн и бескомпромиссное качество в коллекции перегородок Grafica
-                    </h3>
-                    <p className='body_xs'>
-                        В этой коллекции мы создали многообразие дизайна створок и оснастили межкомнатные перегородки безупречным качеством механизмов. Особенность коллекции — плавность скольжения, комфорт и дизайн.
-                    </p>
-                    <div className='new_low'>
-                        <a className='body_xs_bold'>Читать далее</a>
-                    </div>
-                </div>
-                <div className='new_item'>
-                    <img src={first}/>
-                    <h3 className='desctop_h5'>
-                        Графичный дизайн и бескомпромиссное качество в коллекции перегородок Grafica
-                    </h3>
-                    <p className='body_xs'>
-                        В этой коллекции мы создали многообразие дизайна створок и оснастили межкомнатные перегородки безупречным качеством механизмов. Особенность коллекции — плавность скольжения, комфорт и дизайн.
-                    </p>
-                    <div className='new_low'>
-                        <a className='body_xs_bold'>Читать далее</a>
-                    </div>
-                </div>
-                <div className='new_item'>
-                    <img src={first}/>
-                    <h3 className='desctop_h5'>
-                        Графичный дизайн и бескомпромиссное качество в коллекции перегородок Grafica
-                    </h3>
-                    <p className='body_xs'>
-                        В этой коллекции мы создали многообразие дизайна створок и оснастили межкомнатные перегородки безупречным качеством механизмов. Особенность коллекции — плавность скольжения, комфорт и дизайн.
-                    </p>
-                    <div className='new_low'>
-                        <a className='body_xs_bold'>Читать далее</a>
-                    </div>
-                </div>
-                <div className='new_item'>
-                    <img src={first}/>
-                    <h3 className='desctop_h5'>
-                        Графичный дизайн и бескомпромиссное качество в коллекции перегородок Grafica
-                    </h3>
-                    <p className='body_xs'>
-                        В этой коллекции мы создали многообразие дизайна створок и оснастили межкомнатные перегородки безупречным качеством механизмов. Особенность коллекции — плавность скольжения, комфорт и дизайн.
-                    </p>
-                    <div className='new_low'>
-                        <a className='body_xs_bold'>Читать далее</a>
-                    </div>
-                </div>
+               {statia = staia_items_data.map(nex => 
+
+                <New_statia_item
+                photo={nex.photo}
+                text_bold={nex.text_bold}
+                text_thin={nex.text1_thin}
+                date={nex.date}
+
+                
+                
+                />
+               )}
+                
             </div>
        
            
