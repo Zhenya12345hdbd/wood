@@ -7,6 +7,7 @@ import Header from './components/header/header';
 import Vitrina from './components/vitrina/vitrina';
 import Main from './pages/main';
 import Vitrina_item from './components/vitrina/vitrina_item';
+import Footer from './components/footer/footer';
 
 function App() {
  
@@ -14,17 +15,11 @@ function App() {
     <div>
       <Header/>
        <Routes>
-          
-          <Route  path="/" element={<Main />}>
-            
+          <Route  path="/" element={<Main />}> 
           </Route>
-          
-          
-          
-
         </Routes>
 
-       
+       <Footer/>
       
     </div>
   );
