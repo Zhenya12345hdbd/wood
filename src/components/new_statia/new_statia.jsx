@@ -7,6 +7,15 @@ import New_statia_item from './new_statia_item';
 let statia
 
 function New_statia(rix) {
+
+    const ery = Math.max(document.documentElement.clientWidth)
+     
+     if(ery <= 390){
+      
+              statia = staia_items_data.slice(0,4)
+      }
+          
+     console.log(ery)
  
   return (
     <section >
@@ -26,7 +35,6 @@ function New_statia(rix) {
                 text_thin={nex.text1_thin}
                 date={nex.date}
 
-                
                 
                 />
                )}

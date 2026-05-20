@@ -1,6 +1,8 @@
 
 import './footer.scss'
-
+import vk from './/footer_image/vk.png'
+import det from './/footer_image/d.png'
+import telegram from './/footer_image/telegram.png'
 import logo from '../img/header/logo.png'
 
 
@@ -33,7 +35,7 @@ function Footer(rix) {
                    support@sofiadoors.com
                 </p>
             </div>
-            <div className='footer_first'>
+            <div className='footer_first none'>
                 
                 <p className='desctop_body_l'>
                     Межкомнатные двери
@@ -51,7 +53,7 @@ function Footer(rix) {
                     Мебельные фасады
                 </p>
             </div>
-            <div className='footer_first'>
+            <div className='footer_first none'>
                 
                 <p className='desctop_body_l'>
                     Доставка
@@ -70,7 +72,12 @@ function Footer(rix) {
                 </p>
 
             </div>
-            
+            <div className='footer_soc'>
+                <img src={vk} alt="" />
+                <img src={det} alt="" />
+                <img src={telegram} alt="" />
+
+            </div>
             </div>
     </section>
   );
