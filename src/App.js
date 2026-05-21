@@ -8,6 +8,7 @@ import Vitrina from './components/vitrina/vitrina';
 import Main from './pages/main';
 import Vitrina_item from './components/vitrina/vitrina_item';
 import Footer from './components/footer/footer';
+import Catalog from './pages/catalog';
 
 function App() {
  
@@ -15,8 +16,8 @@ function App() {
     <div>
       <Header/>
        <Routes>
-          <Route  path="/" element={<Main />}> 
-          </Route>
+          <Route  path="/" element={<Main />}/> 
+          <Route  path="/catalog" element={<Catalog />}/> 
         </Routes>
 
        <Footer/>

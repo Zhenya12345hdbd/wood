@@ -10,7 +10,7 @@ import logo from '../img/header/logo.png'
 function Footer(rix) {
  
   return (
-    <section >
+    <footer>
         <div className='container footer'>
             <div className='footer_first'>
                 <img src={logo} alt="" />
@@ -79,7 +79,7 @@ function Footer(rix) {
 
             </div>
             </div>
-    </section>
+    </footer>
   );
 }
 

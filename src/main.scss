@@ -7,9 +7,13 @@ header{
      color: white;
      padding-bottom: 30px;
      padding-top: 30px;
-     
-     
+      
 }
+footer{
+    max-width: 1600px;
+    margin: 0 auto;
+    
+  }
 section{
     max-width: 1600px;
     margin: auto;
@@ -128,10 +132,11 @@ text-transform: uppercase;
   }
   .container{
     width: 390px;
-    justify-content:left;
+    justify-content:center;
     gap: 35px;
-    padding-left: 25px;
-    padding-right: 25px;
+    
+    
+    
   }
   footer{
     width: 390px;

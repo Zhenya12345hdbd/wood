@@ -3,19 +3,27 @@ import './new_statia.scss'
 import first from '../new_statia/statia_image/1.png'
 import { staia_items_data } from './new_statia_data';
 import New_statia_item from './new_statia_item';
+import { useState } from 'react';
 
 let statia
+let sta = staia_items_data.slice(0,6)
+
 
 function New_statia(rix) {
 
+
     const ery = Math.max(document.documentElement.clientWidth)
-     
+ 
      if(ery <= 390){
       
-              statia = staia_items_data.slice(0,4)
+             sta = staia_items_data.slice(0,4)
+            
+      }else{
+        sta = staia_items_data.slice(0,6)
+
       }
           
-     console.log(ery)
+     
  
   return (
     <section >
@@ -27,7 +35,7 @@ function New_statia(rix) {
                 <a>Все статьи</a>
             </div>
             <div className='container main'>
-               {statia = staia_items_data.map(nex => 
+               {statia = sta.map(nex => 
 
                 <New_statia_item
                 photo={nex.photo}
