@@ -1,5 +1,5 @@
 
-
+import Main_catalog from "../components/catalog/catalog";
 
 function Catalog() {
   
@@ -9,8 +9,7 @@ function Catalog() {
   
   return (
     <div>
-        
-        
+         <Main_catalog/>
 
     </div>
     

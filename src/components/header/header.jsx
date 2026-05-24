@@ -9,20 +9,34 @@ import { NavLink, Link } from 'react-router-dom';
 
 
 let menu_list
-
+let style_on = {
+    background: '#A9845C',
+}
 
 function Header() {
     const [isOpen , setOpen] = useState();
-    const [mine , setMine] = useState();
+    const [mine , setMine] = useState(style_on);
     window.addEventListener('scroll', () => {
   if (window.pageYOffset > 200) { // Условие для скрытия меню при прокрутке вниз
     setOpen(false)
   } 
 });
 function atb() {
-    
-    
+
+    setMine(style_on = {
+    background: "#3B3937",
+    color: '#A9845C'
+})  
+      
 }
+function atx() {
+
+        setMine(  style_on = {
+        background: '#A9845C',
+        })  
+       
+}
+   
 
 
 
@@ -30,7 +44,7 @@ function atb() {
   return (
       <header>
         <div className='container' >
-            <Link to={'/'}><img src={logo} className='header_logo' alt="" /></Link>
+            <Link to={'/'} onClick={atx}><img src={logo} className='header_logo' alt="" /></Link>
             <ul className={isOpen ? "active" : ""}>
                 {menu_list=list.map(list =>
                 <li className='.body_m'>
@@ -39,7 +53,7 @@ function atb() {
 
                 )}
                 <div className='header_text'>
-                    <p className='body_m' onClick={console.log('qqq')}> 
+                    <p className='body_m' > 
                     support@sofiadoors.com
                 </p>
                 <h3 className='desctop_h5'> 
@@ -49,7 +63,8 @@ function atb() {
                 
                 
             </ul>
-                <Link to={'/catalog'} ><All_button
+                <Link to={'/catalog'} onClick={atb}><All_button
+                style = {mine}
                 text={'Каталог'} 
                 /></Link>
                 <img src={phone} className='phone' alt=''/>

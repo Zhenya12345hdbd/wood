@@ -1,0 +1,63 @@
+.catalog{
+    display: flex;
+    flex-direction: column;
+    h1{
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 64px;
+        line-height: 100%;
+    }
+}
+.catalog_all{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.catalog_item{
+    height: 300px;
+    background-image: url('../catalog/catalog_image//dveri.jpg');
+    background-size: 120%;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    h2{
+        color: white;
+    }
+    img{
+        width: 36px;
+        height: 36px;
+        
+    }
+}
+.big{
+    width: 620px;
+    
+}
+.small{
+    width: 400px;
+}
+.back_dveri{
+    background-image: url('../catalog/catalog_image/dveri.jpg');
+}
+.back_lestnici{
+    background-image: url('../catalog/catalog_image/lestnici.png');
+}
+.back_fasadi{
+    background-image: url('../catalog/catalog_image/fasadi.jpg');
+}
+.back_mebel{
+    background-image: url('../catalog/catalog_image/mebel.png');
+}
+.back_paneli{
+    background-image: url('../catalog/catalog_image/paneli.png');
+}
