@@ -9,11 +9,14 @@ import { NavLink, Link } from 'react-router-dom';
 
 
 let menu_list
-let style_on = {
+let style_on
+
+function Header() {
+ style_on = {
     background: '#A9845C',
 }
 
-function Header() {
+    
     const [isOpen , setOpen] = useState();
     const [mine , setMine] = useState(style_on);
     window.addEventListener('scroll', () => {
@@ -21,8 +24,10 @@ function Header() {
     setOpen(false)
   } 
 });
-function atb() {
 
+
+
+function atb() {
     setMine(style_on = {
     background: "#3B3937",
     color: '#A9845C'
@@ -30,12 +35,12 @@ function atb() {
       
 }
 function atx() {
-
         setMine(  style_on = {
         background: '#A9845C',
         })  
        
 }
+console.log(mine)
    
 
 

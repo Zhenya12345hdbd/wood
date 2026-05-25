@@ -11,7 +11,7 @@ function Catalog_item(rix) {
                 <h2 className='desctop_h4'>
                     {rix.name}
                 </h2>
-                <img src={right}/>
+                <div className='img'></div>
             </div>
  
   );

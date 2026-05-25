@@ -28,17 +28,31 @@
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     justify-content: space-between;
     
     h2{
         color: white;
     }
-    img{
+    .img{
         width: 36px;
         height: 36px;
+        background-image: url('../catalog/catalog_image//1.png');
         
     }
+    
 }
+.catalog_item:hover{
+   .img{
+        
+        background-image: url('../catalog/catalog_image//1_hover.png');
+        
+    }
+   
+
+} 
+
+
 .big{
     width: 620px;
     
