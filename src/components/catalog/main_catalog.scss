@@ -16,6 +16,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 40px;
+    
 }
 .catalog_item{
     height: 300px;
@@ -53,6 +54,7 @@
 } 
 
 
+
 .big{
     width: 620px;
     
@@ -75,3 +77,29 @@
 .back_paneli{
     background-image: url('../catalog/catalog_image/paneli.png');
 }
+
+@media (max-width: 390px) {
+    .big{
+    width: 370px;
+    
+}
+.small{
+    width: 370px;
+}
+.catalog_all{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    
+}
+.catalog{
+    h1{
+       
+        margin-bottom: 10px;
+        
+    }
+}
+
+}
+

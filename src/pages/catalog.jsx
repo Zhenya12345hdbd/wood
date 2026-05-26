@@ -1,8 +1,9 @@
 
 import Main_catalog from "../components/catalog/catalog";
+import { useParams } from "react-router-dom";
 
 function Catalog() {
-  
+
   
   
   

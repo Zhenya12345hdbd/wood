@@ -20,6 +20,7 @@ function Main_catalog(rix) {
                 name={rop.name}
                 photo = {rop.photo}
                 size = {rop.size}
+                link = {rop.link}
                 
                 />
             )}

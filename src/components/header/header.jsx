@@ -5,6 +5,7 @@ import phone from '../img/header/phone.png'
 import { useState } from 'react';
 import All_button from './all_button';
 import { NavLink, Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 
 
@@ -15,7 +16,14 @@ function Header() {
  style_on = {
     background: '#A9845C',
 }
-
+const location = useLocation();
+console.log(location.pathname)
+if(location.pathname === '/catalog'){
+  style_on = {
+    background: "#3B3937",
+    color: '#A9845C'
+}
+}
     
     const [isOpen , setOpen] = useState();
     const [mine , setMine] = useState(style_on);

@@ -9,6 +9,7 @@ import Main from './pages/main';
 import Vitrina_item from './components/vitrina/vitrina_item';
 import Footer from './components/footer/footer';
 import Catalog from './pages/catalog';
+import Catalog_big from './pages/catalog_big';
 
 function App() {
  
@@ -18,6 +19,8 @@ function App() {
        <Routes>
           <Route  path="/" element={<Main />}/> 
           <Route  path="/catalog" element={<Catalog />}/> 
+            <Route  path="/:link" element={<Catalog_big />}></Route>
+          
         </Routes>
 
        <Footer/>
