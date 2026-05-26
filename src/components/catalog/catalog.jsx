@@ -11,6 +11,9 @@ function Main_catalog(rix) {
   return (
     <section>
         <div className='container catalog'>
+          <h4>
+            Главная - каталог
+          </h4>
             <h1 className='desctop_h1'>
                 Каталог
             </h1>

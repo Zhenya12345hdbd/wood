@@ -1,0 +1,24 @@
+.all_cat{
+    display: flex;
+    flex-direction: column;
+}
+
+.full{
+    display: flex;
+    gap: 90px;
+}
+
+.all_left{
+    width: 244px;
+    background-color: red;
+    height: 500px;
+
+}
+.all_right{
+width: 950px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 40px;
+    
+}

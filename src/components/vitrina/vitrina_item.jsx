@@ -6,7 +6,7 @@
 function Vitrina_item(vit) {
  
   return (  
-        <div className='item'>
+        <div className='item' style={vit.width}>
             <h3 className='body_l'>
                       {vit.firm} {vit.model}
                     </h3>

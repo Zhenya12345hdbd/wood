@@ -14,6 +14,9 @@ let vitriva_menu
 let vitriva_item
 let dveri
 let slize
+const width = {
+    width : '400px',
+}
 
 
 function Vitrina(rix) {
@@ -84,7 +87,8 @@ function Vitrina(rix) {
                     photo = {vitr.photo}
                     price = {vitr.price}
                     sale = {vitr.sale}  
-                    color = {vitr.color}                  />
+                    color = {vitr.color} 
+                    width={width}                 />
                 )}
                 {!render && (<div className='button button_down' onClick={net }>
                     Показать все
