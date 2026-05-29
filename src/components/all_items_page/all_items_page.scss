@@ -1,16 +1,19 @@
 .all_cat{
     display: flex;
     flex-direction: column;
+    h1{
+        width: 100%;
+    }
 }
 
 .full{
     display: flex;
-    gap: 90px;
+    gap: 50px;
 }
 
 .all_left{
-    width: 244px;
-    background-color: red;
+    width: 280px;
+    
     height: 500px;
 
 }
@@ -22,3 +25,26 @@ flex-wrap: wrap;
 gap: 40px;
     
 }
+.menu_all_cat{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    
+    a{
+font-weight: 700;
+font-style: Bold;
+font-size: 15px;
+cursor: pointer;
+line-height: 140%;
+letter-spacing: 6%;
+vertical-align: middle;
+text-transform: uppercase;
+color:#3B3937;
+
+    }
+    .active2{
+    color: #B14101;
+}
+}
+

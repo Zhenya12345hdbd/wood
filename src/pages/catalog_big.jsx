@@ -16,6 +16,7 @@ function Catalog_big() {
     <div>
          <All_items_page
          name = {user1.name}
+         ler= {user1.link}
          />
 
     </div>
